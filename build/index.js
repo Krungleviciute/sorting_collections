@@ -1,0 +1,25 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var LinkedList_1 = require("./LinkedList");
+var CharactersCollection_1 = require("./CharactersCollection");
+var NumberCollection_1 = require("./NumberCollection");
+var word = new CharactersCollection_1.CharactersCollection("lAbaDienA");
+var array = new NumberCollection_1.NumberCollection([100, 3, -5, 0]);
+var linkedList = new LinkedList_1.LinkedList();
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(-3);
+linkedList.add(4);
+word.sort();
+array.sort();
+linkedList.sort();
+console.log(array.data);
+console.log(word.data);
+linkedList.print();
+//these was used when Sorter was regular class and not abstract
+// const sorter = new Sorter(array);
+// const sortword = new Sorter(word);
+// const sorterLinkedList = new Sorter(linkedList);
+// sortword.sort();
+// sorter.sort();
+// sorterLinkedList.sort();
